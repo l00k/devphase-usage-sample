@@ -1,9 +1,9 @@
 # devPHAse sample
 
 ### Steps
-1. Pull this repository with submodules
+1. Pull this repository
 ```shell
-git clone --recursive git@github.com:l00k/devphase-sample.git
+git clone git@github.com:l00k/devphase-usage-sample.git
 ```
 2. Install dependencies
 ```shell
