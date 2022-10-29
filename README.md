@@ -11,9 +11,13 @@ yarn install
 ```
 3. Build contract(s)
 ```shell
-yarn compile [flipper]
+yarn devphase compile [flipper]
 ```
-4. Try testing
+4. Generating type bindings (included in compile command)
 ```shell
-yarn test
+yarn devphase typings [flipper]
+```
+5. Try testing
+```shell
+yarn devphase test
 ```
