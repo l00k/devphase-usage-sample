@@ -1,4 +1,7 @@
 /contracts/*/target/
 /node_modules/
 
+.yarn
+.pnp.*js
+.yarnrc.yml
 yarn.lock

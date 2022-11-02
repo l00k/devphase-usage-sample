@@ -30,7 +30,7 @@
     "include": [
         "scripts/*",
         "tests/*",
-        "typings/*"
+        "typings/*",
     ],
     "exclude": [
         "node_modules"
