@@ -1,3 +1,4 @@
+/artifacts
 /contracts/*/target/
 /node_modules/
 
