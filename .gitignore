@@ -1,7 +1,10 @@
+/.devphase
 /artifacts
 /contracts/*/target
 /logs
 /stacks
 
-node_modules
+/node_modules
+/.yarn
 yarn.lock
+.yarnrc.yml

@@ -3,6 +3,7 @@ import * as PhalaSdk from '@phala/sdk';
 import type { KeyringPair } from '@polkadot/keyring/types';
 import { ContractType } from 'devphase';
 
+
 describe('Flipper', () => {
     let factory : Flipper.Factory;
     let contract : Flipper.Contract;
@@ -11,8 +12,10 @@ describe('Flipper', () => {
     
     before(async function() {
         factory = await this.devPhase.getFactory(
-            ContractType.InkCode,
-            './contracts/flipper/target/ink/flipper.contract'
+            './contracts/flipper/target/ink/flipper.contract',
+            {
+                contractType: ContractType.InkCode,
+            }
         );
         
         await factory.deploy();
@@ -31,7 +34,6 @@ describe('Flipper', () => {
         
         it('Should be created with proper intial value', async function() {
             const response = await contract.query.get(certificate, {});
-            
             expect(response.output.toJSON()).to.be.equal(false);
         });
     });
@@ -43,8 +45,8 @@ describe('Flipper', () => {
         
         it('Should be created with proper intial value', async function() {
             const response = await contract.query.get(certificate, {});
-            
             expect(response.output.toJSON()).to.be.equal(true);
         });
     });
+    
 });
