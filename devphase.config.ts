@@ -1,6 +1,7 @@
-import type { ProjectConfigOptions } from 'devphase';
-
-const config : ProjectConfigOptions = {
-};
-
-export default config;
+// import type { ProjectConfigOptions } from 'devphase';
+//
+// const config : ProjectConfigOptions = {
+// };
+//
+// export default config;
+module.exports = {}

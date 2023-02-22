@@ -6,14 +6,12 @@ import type { ContractCallOutcome, ContractOptions } from "@polkadot/api-contrac
 import type { Codec } from "@polkadot/types/types";
 
 export namespace Flipper {
-    type InkEnv_Types_AccountId = any;
-
     /** */
     /** Queries */
     /** */
     namespace ContractQuery {
         export interface Get extends DPT.ContractQuery {
-            (certificateData: PhalaSdk.CertificateData, options: ContractOptions): DPT.CallResult<DPT.CallOutcome<DPT.IBool>>;
+            (certificateData: PhalaSdk.CertificateData, options: ContractOptions): DPT.CallResult<DPT.CallOutcome<DPT.IJson<boolean>>>;
         }
     }
 
